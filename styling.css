@@ -1,3 +1,22 @@
 /* Fonts */
-font-family: 'Caveat', cursive;
-font-family: 'Roboto', sans-serif;
+/* body {
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+} */
+
+
+.footer-row {
+    background-color: rgb(83, 5, 5);
+    color: #FFFFFF;
+    display: flex;
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    width: 100%;
+    }
