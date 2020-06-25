@@ -14,9 +14,10 @@
     justify-content: center;
     flex-direction: column;
     position: fixed;
+    
     left: 0;
     bottom: 0;
     font-family: 'Roboto', sans-serif;
-    padding: 5px;
+    padding-top: 10px;
     width: 100%;
     }
