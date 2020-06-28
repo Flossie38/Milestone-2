@@ -62,25 +62,57 @@
                 </section>
             </div>
 
-        </div>
-    </div>
+            <br>
 
-    <div class="photogallery">
+            <div class="photogallery">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="lakeimgs">
-            <img src="images/buttermere_1.jpg" style="width:100%">
-            <div class="text">Buttermere</div>
-        </div>
+                <!-- Images  -->
+                <div class="lakeimgs fade">
+                    <img src="images/buttermere_1.jpg" style="width:60%">
+                    <div class="labeltxt">Buttermere</div>
+                </div>
 
-        <div class="lakeimgs">
-            <img src="images/eskdale_1.jpg" style="width:100%">
-            <div class="text">Eskdale</div>
-        </div>
+                <div class="lakeimgs fade">
+                    <img src="images/eskdale_1.jpg" style="width:60%">
+                    <div class="labeltxt">Eskdale</div>
+                </div>
 
-        <div class="lakeimgs">
-            <img src="images/coniston.jpg" style="width:100%">
-            <div class="text">Coniston</div>
+                <div class="lakeimgs fade">
+                    <img src="images/coniston.jpg" style="width:60%">
+                    <div class="labeltxt">Coniston</div>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- dot counter -->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                var photoIndex = 0;
+                showPhotos();
+                function showPhotos() {
+                    var i;
+                    var photos = document.getElementsByClassName("lakeimgs");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < photos.length; i++) {
+                        photos[i].style.display = "none";
+                    }
+                    photoIndex++;
+                    if (photoIndex > photos.length) { photoIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    photos[photoIndex - 1].style.display = "block";
+                    dots[photoIndex - 1].className += " active";
+                    setTimeout(showPhotos, 2000); // Change image every 2 seconds
+                }
+            </script>
+
         </div>
     </div>
 
