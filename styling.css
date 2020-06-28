@@ -1,13 +1,41 @@
-/* Fonts */
-/* body {
+body    {
     font-family: 'Caveat', cursive;
     font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width:100%;
+    }
+
+.body-image {
+    background-image: url('images/eskdale_2.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* 
+.body-image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5)
 } */
 
+.page-header {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 30px;
+    color: white
+}
+
 .map-container {
-    background-color: #FFFFFF;
-    padding-left: 50px;
-    position: center;
+    background-color: none;
+    padding: 50px;
 }
 
 
