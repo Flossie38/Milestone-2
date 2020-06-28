@@ -4,6 +4,12 @@
     font-family: 'Roboto', sans-serif;
 } */
 
+.map-container {
+    background-color: #FFFFFF;
+    padding-left: 50px;
+    position: center;
+}
+
 
 .footer-row {
     background-color: rgb(83, 5, 5);
