@@ -115,6 +115,7 @@ body    {
     /* the below allows scroll on adventure page*/
     overflow: auto;
     position: relative;
+    text-align: center;
 }
 
 
@@ -134,7 +135,7 @@ body    {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     font-family: 'Roboto', sans-serif;
