@@ -64,19 +64,19 @@
 
             <br>
             <div class="adventure-body">
-                <div class="map-container">
-                    <iframe width="90%" height="450" frameborder="0" style="border:0"
-                        src="">
-                    </iframe>
+
+                <div id="map">
 
                 </div>
 
-              
-
-
             </div>
 
+
+
+
         </div>
+
+    </div>
 
     </div>
 
@@ -90,6 +90,17 @@
     </div>
 
 
+    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrr8CFctUX7dcDkWkN28QS0kwItOEpkVE&callback=initMap">
+        </script>
+
+    <script src="javascript/map.js">
+    </script>
+
+
     <!-- CDN jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -100,9 +111,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrr8CFctUX7dcDkWkN28QS0kwItOEpkVE&callback=initMap">
-        </script>
+
 </body>
 
 </html>

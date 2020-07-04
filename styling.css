@@ -119,12 +119,21 @@ body    {
 }
 
 
-.map-container {
+div#map 
+{min-height: 500px;
+width: 50%;
+padding:30px;
+margin: auto;
+text-align: center;
+position: relative;
+}
+
+/* .map-container {
     background-color: none;
     padding: 50px;
     text-align: center;
     position: relative;
-}
+} */
 
 
 .footer-row {
