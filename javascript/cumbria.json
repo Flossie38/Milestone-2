@@ -1,6 +1,17 @@
-{
+[
+{   "placeCategory": "Mountains",
+    "placeName": "Helvellyn",
+    "placeID":    "ChIJLT2SN37CfEgR_td6IkpnPB"
+},
+
+{"placeCategory": "Mountains",
+    "placeName": "Blencathra",
+    "placeID":    "ChIJ9YH8vevdfEgRKteWiA3hO_w"
 
 },
 {
-
-},
+    "placeCategory": "Mountains",
+    "placeName": "Scafell Pike",
+    "placeID":    "ChIJQXpT0TzGfEgR5q7WF3pt6-E"
+}
+]
