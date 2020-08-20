@@ -53,7 +53,24 @@ function showListcat1() {
   clearMarkers();
 
   for (let i = 0; i < locationscat1.length; i++) {
-    addMarkerWithTimeout(locationscat1[i], i * 200);
+    var data = locationscat1[i];
+    var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      animation: google.maps.Animation.none,
+      title: data.title
+    });
+
+    //click event on
+    (function (markers, data) {
+      google.maps.event.addListener(marker, "click", function (e) {
+        //open info window, place description inside an HTML DIV to restrict the size of InfoWindow.
+        let infoWindow = new google.maps.InfoWindow();
+        infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + "<strong>" + data.title + "</strong>" + data.image + " " + data.description + "</div>");
+        infoWindow.open(map, markers);
+      });
+    })(marker, data);
   }
 }
 
@@ -62,7 +79,24 @@ function showListcat2() {
   clearMarkers();
 
   for (let i = 0; i < locationscat2.length; i++) {
-    addMarkerWithTimeout(locationscat2[i], i * 200);
+    var data = locationscat2[i];
+    var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      animation: google.maps.Animation.none,
+      title: data.title
+    });
+
+    //click event on
+    (function (markers, data) {
+      google.maps.event.addListener(marker, "click", function (e) {
+        //open info window, place description inside an HTML DIV to restrict the size of InfoWindow.
+        let infoWindow = new google.maps.InfoWindow();
+        infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + "<strong>" + data.title + "</strong>" + data.image + " " + data.description + "</div>");
+        infoWindow.open(map, markers);
+      });
+    })(marker, data);
   }
 }
 
@@ -91,9 +125,9 @@ function showListcat3() {
     //click event on
     (function (markers, data) {
       google.maps.event.addListener(marker, "click", function (e) {
-        //open info wondow, place description inside an HTML DIV to restrict the size of InfoWindow.
+        //open info window, place description inside an HTML DIV to restrict the size of InfoWindow.
         let infoWindow = new google.maps.InfoWindow();
-        infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + "<strong>"+ data.title + "</strong>" + data.image + " " + data.description + "</div>");
+        infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + "<strong>" + data.title + "</strong>" + data.image + " " + data.description + "</div>");
         infoWindow.open(map, markers);
       });
     })(marker, data);
@@ -106,23 +140,27 @@ function showListcat4() {
   clearMarkers();
 
   for (let i = 0; i < locationscat4.length; i++) {
-    addMarkerWithTimeout(locationscat4[i], i * 200);
+    var data = locationscat4[i];
+    var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      animation: google.maps.Animation.none,
+      title: data.title
+    });
+
+    //click event on
+    (function (markers, data) {
+      google.maps.event.addListener(marker, "click", function (e) {
+        //open info window, place description inside an HTML DIV to restrict the size of InfoWindow.
+        let infoWindow = new google.maps.InfoWindow();
+        infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + "<strong>" + data.title + "</strong>" + data.image + " " + data.description + "</div>");
+        infoWindow.open(map, markers);
+      });
+    })(marker, data);
   }
 }
 
-
-
-// function addMarkerWithTimeout(position, timeout) {
-//   window.setTimeout(() => {
-//     markers.push(
-//       new google.maps.Marker({
-//         position: position,
-//         map: map,
-//         animation: google.maps.Animation.DROP
-//       })
-//     );
-//   }, timeout);
-// }
 
 
 function clearMarkers() {
@@ -133,75 +171,3 @@ function clearMarkers() {
 }
 
 
-
-
-// <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-// <script type="text/javascript">
-//     var markers = [
-//     {
-//         "title": 'Aksa Beach',
-//         "lat": '19.1759668',
-//         "lng": '72.79504659999998',
-//         "description": 'Aksa Beach is a popular beach and a vacation spot in Aksa village at Malad, Mumbai.'
-//     },
-//     {
-//         "title": 'Juhu Beach',
-//         "lat": '19.0883595',
-//         "lng": '72.82652380000002',
-//         "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
-//     },
-//     {
-//         "title": 'Girgaum Beach',
-//         "lat": '18.9542149',
-//         "lng": '72.81203529999993',
-//         "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
-//     },
-//     {
-//         "title": 'Jijamata Udyan',
-//         "lat": '18.979006',
-//         "lng": '72.83388300000001',
-//         "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
-//     },
-//     {
-//         "title": 'Sanjay Gandhi National Park',
-//         "lat": '19.2147067',
-//         "lng": '72.91062020000004',
-//         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
-//     }
-//     ];
-//     window.onload = function () {
-//         LoadMap();
-//     }
-//     function LoadMap() {
-//         var mapOptions = {
-//             center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
-//             zoom: 10,
-//             mapTypeId: google.maps.MapTypeId.ROADMAP
-//         };
-//         var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
-
-//         //Create and open InfoWindow.
-//         var infoWindow = new google.maps.InfoWindow();
-
-//         for (var i = 0; i < markers.length; i++) {
-//             var data = markers[i];
-//             var myLatlng = new google.maps.LatLng(data.lat, data.lng);
-//             var marker = new google.maps.Marker({
-//                 position: myLatlng,
-//                 map: map,
-//                 title: data.title
-//             });
-
-//             //Attach click event to the marker.
-//             (function (marker, data) {
-//                 google.maps.event.addListener(marker, "click", function (e) {
-//                     //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-//                     infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
-//                     infoWindow.open(map, marker);
-//                 });
-//             })(marker, data);
-//         }
-//     }
-// </script>
-// <div id="dvMap" style="width: 300px; height: 400px">
-// </div> 
