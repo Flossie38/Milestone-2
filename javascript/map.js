@@ -24,7 +24,7 @@ const locationscat3 = [
 
 const locationscat4 = [
   //  Helvellyn
-  { lat: 54.5268, lng: -3.0172 },
+  { title: "Helvellyn", lat: 54.5268, lng: -3.0172, description: "Helvellyn is a mountain in the English Lake District, the highest point of the Helvellyn range, a north–south line of mountains...", image: "<a href='https://www.mudandroutes.com/routes/walking-routes-helvellyn/' target='_blank'><img src='images/Helvellyn.jpg'></a>" },
   // bassenthwaite
   { lat: 54.683802, lng: -3.2271 },
   //scafell pike
@@ -32,9 +32,9 @@ const locationscat4 = [
 ];
 
 
-let markers = [];
-let map;
-let infoWindow = new google.maps.InfoWindow();
+
+
+// let infoWindow = new google.maps.InfoWindow();
 
 
 // The below loads the map to the adventure page
@@ -47,7 +47,8 @@ function initMap() {
     });
 }
 
-
+let markers = [];
+let map;
 
 function showListcat1() {
   clearMarkers();
@@ -58,9 +59,11 @@ function showListcat1() {
     var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      animation: google.maps.Animation.none,
+      animation: google.maps.Animation.DROP,
       title: data.title
     });
+    // push these to the array above so you can clear on click of next button!!!
+    markers.push(marker);
 
     //click event on
     (function (markers, data) {
@@ -84,9 +87,12 @@ function showListcat2() {
     var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      animation: google.maps.Animation.none,
+      animation: google.maps.Animation.DROP,
       title: data.title
+
     });
+    // push these to the array above so you can clear on click of next button!!!
+    markers.push(marker);
 
     //click event on
     (function (markers, data) {
@@ -118,9 +124,11 @@ function showListcat3() {
     var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      animation: google.maps.Animation.none,
+      animation: google.maps.Animation.DROP,
       title: data.title
     });
+    // push these to the array above so you can clear on click of next button!!!
+    markers.push(marker);
 
     //click event on
     (function (markers, data) {
@@ -145,9 +153,11 @@ function showListcat4() {
     var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      animation: google.maps.Animation.none,
+      animation: google.maps.Animation.DROP,
       title: data.title
     });
+    // push these to the array above so you can clear on click of next button!!!
+    markers.push(marker);
 
     //click event on
     (function (markers, data) {
@@ -162,12 +172,10 @@ function showListcat4() {
 }
 
 
-
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
     markers[i].setMap(null);
-  }
+  };
   markers = [];
 }
-
 
