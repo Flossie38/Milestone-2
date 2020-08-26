@@ -14,9 +14,9 @@ const locationscat2 = [
 
 const locationscat3 = [
   //  Great Langdale Campsite
-  { title: "Great Langdale Campsite", lat: 54.4430, lng: -3.0987, description: "A relaxed, natural site set in the heart of the Great Langdale Valley. With the towering Langdale Pikes looming above it, Great Langdale Campsite is a particularly dramatic spot to pitch up for...", image: "<a href='https://www.nationaltrust.org.uk/holidays/great-langdale-campsite-lake-district' target='_blank'><img src='images/GLCampsite.jpg'></a>" },
+  { title: "Great Langdale Campsite - LA22 9JU", lat: 54.4430, lng: -3.0987, description: "A relaxed, natural site set in the heart of the Great Langdale Valley. With the towering Langdale Pikes looming above it, Great Langdale Campsite is a particularly dramatic spot to pitch up for...", image: "<a href='https://www.nationaltrust.org.uk/holidays/great-langdale-campsite-lake-district' target='_blank'><img src='images/GLCampsite.jpg'></a>" },
   // Hill of Oaks Caravan & Lodge Park
-  { title: "Hill of Oaks Caravan & Lodge Park", lat: 54.300411, lng: -2.947160, description: "A great place to camp in HoO!" },
+  { title: "Hill of Oaks Caravan & Lodge Park - LA12 8NR", lat: 54.300411, lng: -2.947160, description: "Hill of Oaks is a dog friendly park on the shores of Lake Windermere welcoming touring caravans, motor homes and...", image: "<a href='https://www.hillofoaks.co.uk/' target='_blank'><img src='images/HOO.jpg'></a>" },
   //Low Wray Campsite
   { title: "Low Wray Campsite", lat: 54.400810, lng: -2.966060, description: "A great place to camp in Low Wray!" }
 ];
@@ -24,7 +24,7 @@ const locationscat3 = [
 
 const locationscat4 = [
   //  Helvellyn
-  { title: "Helvellyn", lat: 54.5268, lng: -3.0172, description: "Helvellyn is a mountain in the English Lake District, the highest point of the Helvellyn range, a north–south line of mountains...", image: "<a href='https://www.mudandroutes.com/routes/walking-routes-helvellyn/' target='_blank'><img src='images/Helvellyn.jpg'></a>" },
+  { title: "Helvellyn - CA12, UK", lat: 54.5268, lng: -3.0172, description: "Helvellyn is a mountain in the English Lake District, the highest point of the Helvellyn range, a north–south line of mountains...", image: "<a href='https://www.mudandroutes.com/routes/walking-routes-helvellyn/' target='_blank'><img src='images/Helvellyn.jpg'></a>" },
   // bassenthwaite
   { lat: 54.683802, lng: -3.2271 },
   //scafell pike
@@ -32,9 +32,6 @@ const locationscat4 = [
 ];
 
 
-
-
-// let infoWindow = new google.maps.InfoWindow();
 
 
 // The below loads the map to the adventure page
@@ -106,14 +103,6 @@ function showListcat2() {
   }
 }
 
-
-// function showListcat3() {
-//   clearMarkers();
-
-//   for (let i = 0; i < locationscat3.length; i++) {
-//     addMarkerWithTimeout(locationscat3[i], i * 200);
-//   }
-// }
 
 function showListcat3() {
   clearMarkers();

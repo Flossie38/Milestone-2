@@ -134,7 +134,7 @@ position: relative;
 .footer-row {
     background-color: rgb(83, 5, 5);
     color: #FFFFFF;
-    display: flex;
+    display: block;
     font-size: small;
     text-align: center;
     justify-content: center;
