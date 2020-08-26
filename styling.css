@@ -1,7 +1,7 @@
 body    {
     font-family: 'Caveat', cursive;
     font-family: 'Roboto', sans-serif;
-
+    height: 100%
 }
 
 
@@ -11,9 +11,9 @@ body    {
 
 .body-image {
     background-color: #EEEEEE;
-    /* position: relative;
+    
     background-size: cover;
-    background-attachment: fixed; */
+   
     height: 100%;
     width:100%;
     margin: 0px auto;
