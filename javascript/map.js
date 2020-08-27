@@ -37,12 +37,14 @@ const locationscat3 = [
 
 
 const locationscat4 = [
-  //  Helvellyn
-  { title: "Helvellyn - CA12, UK", lat: 54.5268, lng: -3.0172, description: "Helvellyn is a mountain in the English Lake District, the highest point of the Helvellyn range, a north–south line of mountains...", image: "<a href='https://www.mudandroutes.com/routes/walking-routes-helvellyn/' target='_blank'><img src='images/Helvellyn.jpg'></a>" },
-  // bassenthwaite
-  { lat: 54.683802, lng: -3.2271 },
-  //scafell pike
-  { lat: 54.4542, lng: -3.2116 }
+  { title: "Helvellyn", lat: 54.5268, lng: -3.0172, description: "Helvellyn is a mountain in the English Lake District, the highest point of the Helvellyn range, a north–south line of mountains...", image: "<a href='https://www.mudandroutes.com/routes/walking-routes-helvellyn/' target='_blank'><img src='images/Helvellyn.jpg'></a>" },
+  { title: "Bassenthwaite", lat: 54.683802, lng: -3.2271, description: "Nestled in the north west of Lakeland, away from the honeypot regions, walks around Bassent...", image: "<a href='https://www.komoot.com/guide/199794/hiking-around-bassenthwaite-lake' target='_blank'><img src='images/Bassenthwaite.jpg'></a>" },
+  { title: "Scafell Pike", lat: 54.4542, lng: -3.2116, description: "Scafell Pike is the highest mountain in England, at an elevation of 978 metres above sea level...", image: "<a href='https://www.walkupscafellpike.co.uk/' target='_blank'><img src='images/Scafell.jpg'></a>" },
+  { title: "Glaramara", lat: 54.4833, lng: -3.1653, description: "Glaramara is often overlooked in favour of some of the more popular fells. Once described by...", image: "<a href='https://www.mudandroutes.com/routes/walk-up-glaramara-and-allen-crags-from-seatoller/' target='_blank'><img src='images/Glaramara.jpg'></a>" },
+  { title: "Blencathra", lat: 54.6400, lng: -3.0499, description: "Sharp Edge is an exposed scramble that should only be attempted if you’re confident in your abilities and have a head for heights. The scramble up Foule Crag can provide a little challenging to some also...", image: "<a href='https://www.mudandroutes.com/routes/all-the-walking-routes-up-blencathra/' target='_blank'><img src='images/Blencathra.jpg'></a>" },
+  { title: "Latrigg", lat: 54.6123, lng: -3.1179, description: "Despite being one of the lowest in the Lake District, this little fell offers stunning, panoramic views of Derwent Water, Keswick and the northern fells...", image: "<a href='https://www.mudandroutes.com/routes/walk-up-latrigg-keswick-underskiddaw/' target='_blank'><img src='images/Latrigg.jpg'></a>" },
+  { title: "Catbells", lat: 54.5683, lng: -3.1707, description: "Catbells is the perfect introduction to the Lake District...", image: "<a href='https://www.mudandroutes.com/routes/walk-catbells-hawes-end-derwentwater/' target='_blank'><img src='images/Catbells.jpg'></a>" }
+
 ];
 
 
