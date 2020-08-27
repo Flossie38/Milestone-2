@@ -6,73 +6,65 @@ The future plan would be to embed this Lake District holiday site in a wider hol
 
 UX
 
-The plan for this site is stored here: 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The plan for this site is stored here: https://github.com/Flossie38/Milestone-2/blob/master/wireframe/Plan.pdf
+The website is intended for users who want to learn about the places they can visit in te lake district.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
-
+As a user who wants to go campaing I would click on the tent icon and see a selection of campsites indicated by markers.  I can click on those markers and book directly with the sites.
+As a user who wants to book a hotel, I would click on the hotel bed icon and see a selection of hotels indicated by markers.  I can click on those markers and book directly with the hotel.
+As a user who is interested in trekking I can click on the trekking button and view various mountain walk suggestions.  The links on the markers take me to vaious walking route sites with maps and recommendations for access.
 
 
 Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The main feature of the site is the google map.  This is implemented by the Google API specified on the Adenture.html page.
 
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+The other feature is the carousel of images used as a visual teaser to entice the user to see more - by clicking on the 'Take me there' button.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+The google markers are a direct link to the sponsor's own sites where the user can then continue to book their holiday plans.
 
-Features Left to Implement
-Another feature idea
+To prevent the map becoming too cluttered and 'clear markers' javascript operates at the start of each button click to reset the map for the next set of markers.
+
+Additional features and should this site be developed I would like to include an option to enter your email address to recieve updates on the sponsir's offers.
+
+I would also like to expand the site to include voucher codes offering 10% off booking before a certain date (each code different to the preference type)
+
+I would also like to have a separate window to the right which hosts the sponsor's site in an iframe but thios was a step too far for my current knowledge.
+
 Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+I used HTML, CSS and Javascript.  The HTML provides the structure of the site and also the CDN links to pick up the bootstrap basic styling.
+The CSS provides the styling overrides used for things like the footer and the buttons on the adventure page.
+The javascript was used to iterate through the arrays of data and set the information, images and links against the correct markers using the lat and lng corordinates for each destination.
+
+I would like to make this more elegant by hosting the data in a separate json file and using js to pull this through to arrays on the fly.
 
 JQuery
 The project uses JQuery to simplify DOM manipulation.
+
 Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I tested this on a variety of browsers and device types.  I am pleased with the responsiveness of the design and tried to keep it simple layout.  Testing was done manually as there was no calculation on this site and it was mainly about visual appeal and API fucntionality.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+I forgot to restrict my API key at first and was notified by Google of this - I went in and restricted this immediately.
+When I published the pages first time to Github the map did not work so I went through the javascript console and found the API needed to be authorised to be accessed by git hub pages as well.
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+The biggest issue I faced was manipulation of the markers.  The resources at https://developers.google.com/maps/documentation was invaulable in walking me through the various scripts required to implement this map and the markers and get them to behave.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+One thing I would like to have also done is clear each marker on click of a next marker within each preference set as it is still feeling a little cluttered.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+This site site is deployed here: https://flossie38.github.io/Milestone-2/
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The google API is restricted both locally and on my Github pages.
 
 <H2>Credits</H2>
-Content
-The text for section Y was copied from the Wikipedia article Z
 
-Media
+Media and Content
 The photos used in this site were obtained from:
 https://www.lakedistrict.gov.uk/learning/freephotos
 Wikipedia
 The destination sponsor sites own libraries
+The copy content was also picked up from each of the sponsor's own websites as these were linked directly from the google markers.
 
 Acknowledgements
 I received inspiration for this project from my holidays in the lake district as achild and have invcluded favourite destinations
-
-photos from https://www.lakedistrict.gov.uk/learning/freephotos
